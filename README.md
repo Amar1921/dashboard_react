@@ -155,9 +155,10 @@ L'application est entièrement responsive et s'adapte à tous les appareils grâ
 
 ## 📄 Licence
 
-Ce projet est sous licence MIT.
+Libre.
 
-## 👥 Auteur
+## 👥 Amar Syll - [Portfolio](https://sa.syllamar.pro) 
+
 
 Développé avec ❤️ pour servir de base à des applications React modernes.
 
