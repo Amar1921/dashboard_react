@@ -2,7 +2,6 @@ import axios from "axios";
 
 const VITE_URL_VERIFY_TOKEN = import.meta.env.VITE_URL_VERIFY_TOKEN;
 const VITE_URL_LOGIN = import.meta.env.VITE_URL_LOGIN;
-export const VITE_URL_BASE = import.meta.env.VITE_URL_BASE;
 
 
 export async function getData(URL, methode = 'get', data = null) {
@@ -90,44 +89,4 @@ export async function getDataDelete(URL, data) {
 }
 
 
-export async function postData(URL, data) {
-    let response;
-    let configuration = {
-        method: 'post',
-        url: URL,
-        headers: {
-            "Accept": "application/json",
-            "Authorization": "Bearer " + localStorage.getItem('token'),
-            // 'Access-Control-Request-Headers': 'application/json',
-            // 'Accept-Encoding': 'multipart/encrypted',
-            // ' Access-Control-Allow-Origin': '*'
-        },
-        data: data
-    };
-    try {
-        response = await axios.request(configuration);
-    } catch (error) {
-        console.error(error.message);
-    }
 
-    return response
-}
-
-export async function getDesc(URL ) {
-    let response;
-    let configuration = {
-        url: URL,
-        method: 'get',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${localStorage.getItem('token')}`
-        }
-    };
-    try {
-        response = await axios.request(configuration);
-    } catch (error) {
-        console.error(error.message);
-    }
-
-    return response
-}

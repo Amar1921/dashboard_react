@@ -188,12 +188,12 @@ export const Sidebar = () => {
     // Liste des items - CORRIGÉE
     const menuItems = [
         { to: '/', icon: <LayoutDashboard />, text: 'Tableau de bord', end: true },
-        { to: '/clients', icon: <Users />, text: 'Clients' },
-        { to: '/lotissements', icon: <Map />, text: 'Lotissements' },
-        { to: '/parcelles', icon: <LandPlot />, text: 'Parcelles' },
-        { to: '/echeances', icon: <Calendar />, text: 'Échéances' },
-
-        { to: '/depenses', icon: <TrendingUp />, text: 'Dépenses' },
+        // { to: '/clients', icon: <Users />, text: 'Clients' },
+        // { to: '/lotissements', icon: <Map />, text: 'Lotissements' },
+        // { to: '/parcelles', icon: <LandPlot />, text: 'Parcelles' },
+        // { to: '/echeances', icon: <Calendar />, text: 'Échéances' },
+        //
+        // { to: '/depenses', icon: <TrendingUp />, text: 'Dépenses' },
         { to: '/profile', icon: <Users />, text: 'Profile' },
         { to: '/parametres', icon: <Settings />, text: 'Paramètres' },
     ];
